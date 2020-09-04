@@ -36,27 +36,7 @@ $compile = new Imagick();
 $line   = $config['line'];
 $width  = $config['width'];
 
-# ////////////////////////////////////////////////////////////////////////////////////////////////////////// #
-
-$text   = "Nama  : Muh Husni Mubarok
-Nim   : 18.240.xxxx
-Kelas : 5Pxx
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Enim porro repellat et iste sint maxime ipsa. Ad voluptatibus iste maiores sequi quae,
-laudantium non sint possimus a. Ipsum, minus magnam.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Enim porro repellat et iste sint maxime ipsa. Ad voluptatibus iste maiores sequi quae,
-laudantium non sint possimus a. Ipsum, minus magnam.
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Enim porro repellat et iste sint maxime ipsa. Ad voluptatibus iste maiores sequi quae,
-laudantium non sint possimus a. Ipsum, minus magnam.
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Enim porro repellat et iste sint maxime ipsa. Ad voluptatibus iste maiores sequi quae,
-laudantium non sint possimus a. Ipsum, minus magnam.";
-
-# ////////////////////////////////////////////////////////////////////////////////////////////////////////// #
+$text   = file_get_contents('data.txt');
 
 $name_sample = 'sample/' . $config['name_sample'];
 $file_sample = file_get_contents($name_sample);
