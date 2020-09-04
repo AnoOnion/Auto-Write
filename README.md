@@ -1,0 +1,1 @@
+# Auto-Write-with-Imagick
